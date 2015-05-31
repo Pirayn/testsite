@@ -3,10 +3,6 @@ from polls.models import Choice
 from django.contrib import admin
 
 
-admin.site.register(Poll)
-admin.site.register(Choice)
-
-
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
